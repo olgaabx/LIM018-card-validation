@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background: #E1DEDE
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.title {
+    width: 550px;
+    font-size: 20px;
+    padding: 20px 0 0 100px;
+}
+
+.form {
+    position: relative;
+    width: 550px;
+    height: 400px;
+    margin-top: 10px;
+    border: 1px solid rgb(255 0 0 / 40%);
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #FFFF;
+}
+
+.name-and-cardnumber {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0 35px 0;
+}
+
+.ownername-container,
+.cardnumber-container {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+input {
+    height: 22px;
+    margin-top: 8px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    color: rgba(102, 102, 102, 0.69);
+    padding-left: 7px;
+    border-radius: 5px;
+    border: 1px solid rgb(255 0 0 / 40%);
+    width: 200px;
+}
+
+.expiration-and-cvv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.expiration-container,
+.cvv-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.pay-button {
+    position: absolute;
+    left: 200px;
+    width: 140px;
+    height: 35px;
+    background-color: rgb(225 222 222);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    margin-top: 50px;
+}
+
+p {
+    position: absolute;
+    bottom: 2px;
+    left: 25px;
+    font-size: 13px;
+    color: #8f96a3;
+}

@@ -4,10 +4,44 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main>
+      <section class="container">
+        <h1 class="title">Ingresa aquí tu Tarjeta de Crédito o Débito (Visa, MasterCard, Amex, Diners).</h1>
+        <form action="/" class="form">
+          <div class="name-and-cardnumber">
+              <div class="ownername-container">
+                <label for="name" class="name-owner-label">Nombre del titular</label>
+                <input type="text" id="name" class="name-owner-input" placeholder="Escribe tu nombre aquí" required>
+              </div>
+              <div class="cardnumber-container">
+                <label for="cardNumber" class="card-number-label">Número de tarjeta</label>
+                <input type="text" id="cardNumber" class="card-number-input" placeholder="Número de tarjeta" required>
+              </div>
+          </div>
+
+          <div class="expiration-and-cvv">
+            <div class="expiration-container">
+              <label for="fechaexpiracion" class="expiration-label">Fecha de expiración</label>
+              <input type="text" id="fechaexpiracion" class="expiration-input" placeholder="Fecha de expiración" required>
+            </div>
+            <div class="cvv-container">
+              <label for="CVV" class="cvv-label">CVV</label>
+              <input type="text" id="CVV" class="cvv-input" placeholder="CVV" required>
+            </div>
+          </div>
+
+          <input type="submit" value="Comprar boletos" class="pay-button">
+          <p>*Cobraremos un monto mínimo para validar tu tarjeta. Este será devuelto de inmediato.</p>
+        </form>
+
+      </section>
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
