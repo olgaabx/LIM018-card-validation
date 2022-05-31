@@ -32,14 +32,14 @@
             </div>
             <div class="cvv-container">
               <label for="CVV" class="cvv-label">CVV</label>
-              <input type="text" id="CVV" class="cvv-input" placeholder="CVV" required>
+              <input type="password" id="CVV" class="cvv-input" placeholder="CVV" required>
             </div>
           </div>
 
-          <input type="submit" value="Comprar boletos" class="pay-button">
+          <input type="submit" id="buyTickets" value="Comprar boletos" class="pay-button">
           <p>*Cobraremos un monto mínimo para validar tu tarjeta. Este será devuelto de inmediato.</p>
         </form>
-
+        <p id="resultMessage"></p>
       </section>
     </main>
     <footer></footer>
