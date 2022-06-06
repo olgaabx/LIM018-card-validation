@@ -11,7 +11,11 @@
   <body>
     <header></header>
     <main>
-      <section class="container">
+      <section class="firstScreen">
+        
+      </section>
+
+      <section class="container secondScreen">
         <h1 class="title">Ingresa aquí tu Tarjeta de Crédito o Débito (Visa, MasterCard, Amex, Diners).</h1>
         <form action="/" class="form">
           <div class="name-and-cardnumber">
@@ -21,18 +25,18 @@
               </div>
               <div class="cardnumber-container">
                 <label for="cardNumber" class="card-number-label">Número de tarjeta</label>
-                <input type="text" id="cardNumber" class="card-number-input" placeholder="Número de tarjeta" required>
+                <input type="tel" id="cardNumber" class="card-number-input" maxlength="16" placeholder="Número de tarjeta" required>
               </div>
           </div>
 
           <div class="expiration-and-cvv">
             <div class="expiration-container">
               <label for="fechaexpiracion" class="expiration-label">Fecha de expiración</label>
-              <input type="text" id="fechaexpiracion" class="expiration-input" placeholder="Fecha de expiración" required>
+              <input type="month" id="fechaexpiracion" class="expiration-input" min="2022-05" max="2027-12" placeholder="Fecha de expiración" required>
             </div>
             <div class="cvv-container">
               <label for="CVV" class="cvv-label">CVV</label>
-              <input type="password" id="CVV" class="cvv-input" placeholder="CVV" required>
+              <input type="tel" id="CVV" class="cvv-input" maxlength="3" placeholder="CVV" required>
             </div>
           </div>
 
