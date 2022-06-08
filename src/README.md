@@ -24,6 +24,7 @@ Este proyecto está pensando en un producto para comprar boletos de cine mediant
   <img src="./Captura de pantalla 2022-06-08 011414.png">
 
 Prototipo en Figma: https://www.figma.com/file/rq5CnkWoQ15X83yeNpRbWq/Untitled?node-id=39%3A100
+Finalizado en GitHub Pages: https://olgaabx.github.io/LIM018-card-validation/src/
 
   ## 3. Objetivos de aprendizaje
 
