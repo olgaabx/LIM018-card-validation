@@ -11,12 +11,11 @@
   <body>
     <header></header>
     <main>
-      <section class="firstScreen">
-        
-      </section>
-
       <section class="container secondScreen">
-        <h1 class="title">Ingresa aquí tu Tarjeta de Crédito o Débito (Visa, MasterCard, Amex, Diners).</h1>
+        <div>
+          <img class="cardIcon" src="./icons/tarjetas-de-credito (1).png" alt="Icono de tarjetas bancarias">
+          <h1 class="title">Ingresa aquí tu Tarjeta de Crédito o Débito (Visa, MasterCard, Amex, Diners).</h1>
+        </div>
         <form action="/" class="form">
           <div class="name-and-cardnumber">
               <div class="ownername-container">
@@ -25,7 +24,7 @@
               </div>
               <div class="cardnumber-container">
                 <label for="cardNumber" class="card-number-label">Número de tarjeta</label>
-                <input type="tel" id="cardNumber" class="card-number-input" maxlength="16" placeholder="Número de tarjeta" required>
+                <input type="tel" id="cardNumber" class="card-number-input" maxlength="16" placeholder="• • • • • • • • • • • • • •" required>
               </div>
           </div>
 
@@ -41,9 +40,14 @@
           </div>
 
           <input type="submit" id="buyTickets" value="Comprar boletos" class="pay-button">
+          <p id="resultMessage"></p>
           <p>*Cobraremos un monto mínimo para validar tu tarjeta. Este será devuelto de inmediato.</p>
         </form>
-        <p id="resultMessage"></p>
+        <div class="icons">
+          <img src="./icons/visa (2).png" alt="Icono de logo de Visa" class="visa-icon">
+          <img src="./icons/mastercard2.png" alt="Icono de logo de MasterCard" class="mastercard-icon">
+          <img src="./icons/american-express (2).png" alt="Icono de logo de American Express" class="amex-icon">
+        </div>
       </section>
     </main>
     <footer></footer>

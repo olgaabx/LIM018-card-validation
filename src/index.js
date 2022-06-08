@@ -1,6 +1,5 @@
 import validator from './validator.js';
 // Llamamos el input donde se va a ingresar el número de la tarjeta y poder usarlo en el evento de click
-//const creditCardNumber = document.getElementById('cardNumber');
 const creditCardNumber = document.getElementById('cardNumber');
 // Llamamos el botón que envía los datos del formulario
 const payBtn = document.getElementById('buyTickets');
@@ -9,8 +8,6 @@ const payBtn = document.getElementById('buyTickets');
 payBtn.addEventListener('click', (evt) => {
     // Usamos el preventDefault para poder ver los datos que ingresan en el input y no se refresque la página como lo hace el form por default
     evt.preventDefault();
-    //const creditCardNumber = document.getElementById('cardNumber').value;
-    //validator.isValid(creditCardNumber.value);
     let message = validator.isValid(creditCardNumber.value);
     //console.log(validator.isValid(creditCardNumber.value));
     validator.maskify(creditCardNumber.value);
@@ -23,8 +20,5 @@ payBtn.addEventListener('click', (evt) => {
     } else {
         alert("Tu tarjeta es inválida");
     }
-
-    /*document.getElementById('resultMessage');
-    //resultMessage.textContent = message;*/
 })
 

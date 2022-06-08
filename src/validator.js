@@ -7,15 +7,15 @@ const validator = {
    let multipliedNumbersArray = []
 
    for (let i = 0; i < ccNumber.length; i++){
-     let arrInd = ccNumber[i];
+     let arrayInd = ccNumber[i];
      if (i === 0) {
-      multiplyNumber = arrInd*1;
+      multiplyNumber = arrayInd*1;
      }
       else if (i%2 === 1){
-        multiplyNumber = arrInd*2;
+        multiplyNumber = arrayInd*2;
      }
       else {
-        multiplyNumber = arrInd*1;
+        multiplyNumber = arrayInd*1;
       }
      if (multiplyNumber > 9) {
        multiplyNumber -= 9
@@ -31,15 +31,16 @@ const validator = {
     //console.log(result);
    }
 
-   return result % 10 === 0
+   return result % 10 === 0;
   },
 
   maskify:function(creditCardNumber){
+    //console.log(creditCardNumber); probando que obtenga los números del input
     let arrayNew = [];
     let numCard;
     let array = creditCardNumber.split('');
 
-    // usamos un forEach para que ocurra 
+    // usamos un forEach para que ocurra el maskify
     array.forEach((element, i) => {
       //console.log(element);
       if (i < array.length - 4 ){
